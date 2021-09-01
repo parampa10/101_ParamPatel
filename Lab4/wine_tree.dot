@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+0 [label="hue <= 0.855\nentropy = 1.571\nsamples = 89\nvalue = [29, 35, 25]\nclass = class_1", fillcolor="#ebfcf2"] ;
+1 [label="proanthocyanins <= 1.59\nentropy = 0.579\nsamples = 29\nvalue = [0, 4, 25]\nclass = class_2", fillcolor="#9559e9"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+5 [label="entropy = 0.0\nsamples = 25\nvalue = [0, 0, 25]\nclass = class_2", fillcolor="#8139e5"] ;
+1 -> 5 ;
+6 [label="entropy = 0.0\nsamples = 4\nvalue = [0, 4, 0]\nclass = class_1", fillcolor="#39e581"] ;
+1 -> 6 ;
+2 [label="alcohol <= 13.04\nentropy = 0.999\nsamples = 60\nvalue = [29, 31, 0]\nclass = class_1", fillcolor="#f2fdf7"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="entropy = 0.0\nsamples = 28\nvalue = [0, 28, 0]\nclass = class_1", fillcolor="#39e581"] ;
+2 -> 3 ;
+4 [label="proline <= 705.0\nentropy = 0.449\nsamples = 32\nvalue = [29, 3, 0]\nclass = class_0", fillcolor="#e88e4d"] ;
+2 -> 4 ;
+7 [label="entropy = 0.0\nsamples = 3\nvalue = [0, 3, 0]\nclass = class_1", fillcolor="#39e581"] ;
+4 -> 7 ;
+8 [label="entropy = 0.0\nsamples = 29\nvalue = [29, 0, 0]\nclass = class_0", fillcolor="#e58139"] ;
+4 -> 8 ;
+}
